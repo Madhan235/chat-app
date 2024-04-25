@@ -6,7 +6,7 @@ import mongoose from "mongoose";
         console.log("Connected to DB");
     } catch (error) {
         console.log(error.message);
-    }
+    } 
 }
 
 export default connectToDB;
