@@ -18,7 +18,8 @@ export default function MessageContainer() {
     { !selectedConversation ? <NoChatSelected/> : (
 
       <>
-    <div className="bg-slate-500 px-4 py-2 mb-2 text-start ">
+      {/* header */}
+    <div className="bg-slate-500 px-4 py-2 mb-2 text-start  ">
         <span className='label-text text-white'>To</span>{""} &nbsp;
         <span className=' font-bold text-white'>{selectedConversation.fullName}</span>
     </div>

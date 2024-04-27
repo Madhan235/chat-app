@@ -14,6 +14,8 @@ export default function MessageInput() {
     setMessage("");
   };
   return (
+    <div className="">
+
     <form className='px-4 my-3' onSubmit={handleSubmit}>
         <div className="w-full relative">
 
@@ -27,5 +29,6 @@ export default function MessageInput() {
         </div>
 
          </form>
+         </div>
   )
 }
