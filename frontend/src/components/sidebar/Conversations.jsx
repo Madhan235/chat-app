@@ -4,7 +4,7 @@ import Conversation from './Conversation'
 import useGetConversations from '../../hooks/useGetConversation'
 import { getRandomEmoji } from '../../utils/emojis'
 
-export default function Conversations() {
+export default function Conversations({setClick,click}) {
    const {loading,conversations} = useGetConversations()
 
     
@@ -16,6 +16,8 @@ export default function Conversations() {
       conversation={conversation}
       emoji = {getRandomEmoji()}
       lastIdx = {idx === conversations.length -1 }
+      setClick={setClick}
+      click={click}
  
       />))}
      

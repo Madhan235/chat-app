@@ -19,7 +19,7 @@ export default function Sidebar() {
       <div className={`${click ? 'hidden' : 'flex flex-col max-w-[100%]'}`}>
         <SearchInput />
         <div className="divder px-3"></div>
-        <Conversations />
+        <Conversations setClick={setClick} click={click} />
         <LogoutButton />
       </div>
     </div>
