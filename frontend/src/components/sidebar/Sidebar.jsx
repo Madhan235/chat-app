@@ -9,9 +9,13 @@ export default function Sidebar() {
 
   return (
     <div className="border-r border-slate-500 p-4 flex flex-col">
+      <div className="relative">
+
       <button onClick={() => setClick(!click)}>
-        <GiHamburgerMenu className="text-white size-6 mb-2" />
+        <GiHamburgerMenu className="text-white size-5 mb-2 absolute top-0 right-0  
+        " />
       </button>
+      </div>
       <div className={`${click ? 'hidden' : 'flex flex-col max-w-[100%]'}`}>
         <SearchInput />
         <div className="divder px-3"></div>
