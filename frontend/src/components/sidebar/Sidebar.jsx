@@ -8,7 +8,7 @@ export default function Sidebar() {
   const [click, setClick] = useState(false);
 
   return (
-    <div className="border-r border-slate-500 p-4 flex flex-col">
+    <div className="border-r border-slate-500 p-4 flex flex-col overflow-auto">
       <div className="relative">
 
       <button onClick={() => setClick(!click)}>
